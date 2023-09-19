@@ -30,8 +30,8 @@ class Mamifero(Animal):
         return cls.cantidadMamiferos
     
     
-    def __str__(self):
-        return super().__str__()
+    def toString(self):
+        return super().toString()
     
     def setListado(self, lista):
         self._listado = lista

@@ -9,16 +9,16 @@ class Animal:
         self._zona = None
 
     
-    def __str__(self):
+    def toString(self):
         return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
 
     @classmethod
     def totalPorTipo(self):
-        from zooAnimales import Mamifero
-        from zooAnimales import Ave
-        from zooAnimales import Reptil
-        from zooAnimales import Pez
-        from zooAnimales import Anfibio
+        from zooAnimales.mamifero import Mamifero
+        from zooAnimales.ave import Ave
+        from zooAnimales.reptil import Reptil
+        from zooAnimales.pez import Pez
+        from zooAnimales.anfibio import Anfibio
         "Mamiferos : "+ Mamifero.cantidadMamifero()+"\nAves : "+Ave.cantidadAves()+"\nReptiles : "+Reptil.cantidadReptiles()+"\nPeces : "+Pez.cantidadPeces()+"\nAnfibios : "+Anfibio.cantidadAnfibios()
 
     def movimiento(self):

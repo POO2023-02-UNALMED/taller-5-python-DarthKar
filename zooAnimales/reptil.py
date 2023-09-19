@@ -29,8 +29,8 @@ class Reptil(Animal):
         return cls.cantidadReptiles
 
 
-    def __str__(self):
-        return super().__str__()
+    def toString(self):
+        return super().toString()
 
     def movimiento(self):
         return "reptar" 

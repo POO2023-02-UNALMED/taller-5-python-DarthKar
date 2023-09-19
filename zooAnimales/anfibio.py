@@ -31,8 +31,8 @@ class Anfibio(Animal):
     def movimiento(self):
         return "saltar"    
     
-    def __str__(self):
-        return super().__str__()
+    def toString(self):
+        return super().toString()
 
     def setListado(self,listado):
         self._listado = listado
