@@ -1,11 +1,6 @@
-from zooAnimales.anfibio import Anfibio
-from zooAnimales.ave import Ave
-from zooAnimales.mamifero import Mamifero
-from zooAnimales.pez import Pez
-from zooAnimales.reptil import Reptil
 
 class Animal:
-    
+    totalAnimales=0
     def __init__(self, nombre,edad,habitat,genero):
         self._nombre = nombre
         self._edad = edad
@@ -16,8 +11,13 @@ class Animal:
     def __str__(self):
         return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
 
-        
+    @classmethod
     def totalPorTipo(self):
+        from zooAnimales import Mamifero
+        from zooAnimales import Ave
+        from zooAnimales import Reptil
+        from zooAnimales import Pez
+        from zooAnimales import Anfibio
         "Mamiferos : "+ Mamifero.cantidadMamifero()+"\nAves : "+Ave.cantidadAves()+"\nReptiles : "+Reptil.cantidadReptiles()+"\nPeces : "+Pez.cantidadPeces()+"\nAnfibios : "+Anfibio.cantidadAnfibios()
 
     def movimiento(self):
