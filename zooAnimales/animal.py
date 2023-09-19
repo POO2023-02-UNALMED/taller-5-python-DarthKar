@@ -1,3 +1,9 @@
+from zooAnimales.anfibio import Anfibio
+from zooAnimales.ave import Ave
+from zooAnimales.mamifero import Mamifero
+from zooAnimales.pez import Pez
+from zooAnimales.reptil import Reptil
+
 class Animal:
     
     def __init__(self, nombre,edad,habitat,genero):
@@ -12,7 +18,7 @@ class Animal:
 
         
     def totalPorTipo(self):
-        pass
+        "Mamiferos : "+ Mamifero.cantidadMamifero()+"\nAves : "+Ave.cantidadAves()+"\nReptiles : "+Reptil.cantidadReptiles()+"\nPeces : "+Pez.cantidadPeces()+"\nAnfibios : "+Anfibio.cantidadAnfibios()
 
     def movimiento(self):
         return "desplazarse"
