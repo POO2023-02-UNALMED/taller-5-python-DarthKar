@@ -25,7 +25,7 @@ class Ave(Animal):
     
     @classmethod
     def cantidadAves(cls):
-        return cls.cantidadAves
+        return cls.canAves
     
     def toString(self):
         return super().toString()

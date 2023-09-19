@@ -26,7 +26,7 @@ class Anfibio(Animal):
     
     @classmethod
     def cantidadAnfibios(cls):
-        return cls.cantidadAnfibios
+        return cls.canAnfibios
 
     def movimiento(self):
         return "saltar"    

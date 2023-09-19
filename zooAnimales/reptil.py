@@ -26,7 +26,7 @@ class Reptil(Animal):
 
     @classmethod
     def cantidadReptiles(cls):
-        return cls.cantidadReptiles
+        return cls.canReptiles
 
 
     def toString(self):

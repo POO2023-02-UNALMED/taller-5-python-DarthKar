@@ -24,8 +24,8 @@ class Pez(Animal):
         return bacalao
 
     @classmethod
-    def cantidadPez(cls):
-        return cls.cantidadPeces
+    def cantidadPeces(cls):
+        return cls.canPeces
 
 
     def toString(self):

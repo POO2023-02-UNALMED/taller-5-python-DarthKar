@@ -27,7 +27,7 @@ class Mamifero(Animal):
 
     @classmethod
     def cantidadMamiferos(cls):
-        return cls.cantidadMamiferos
+        return cls.canMamiferos
     
     
     def toString(self):
