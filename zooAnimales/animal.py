@@ -19,7 +19,7 @@ class Animal:
         from zooAnimales.reptil import Reptil
         from zooAnimales.pez import Pez
         from zooAnimales.anfibio import Anfibio
-        "Mamiferos : "+ Mamifero.cantidadMamiferos()+"\nAves : "+Ave.cantidadAves()+"\nReptiles : "+Reptil.cantidadReptiles()+"\nPeces : "+Pez.cantidadPeces()+"\nAnfibios : "+Anfibio.cantidadAnfibios()
+        return "Mamiferos : "+ str(Mamifero.cantidadMamiferos())+"\nAves : "+str(Ave.cantidadAves())+"\nReptiles : "+str(Reptil.cantidadReptiles())+"\nPeces : "+str(Pez.cantidadPeces())+"\nAnfibios : "+str(Anfibio.cantidadAnfibios())
 
     def movimiento(self):
         return "desplazarse"
