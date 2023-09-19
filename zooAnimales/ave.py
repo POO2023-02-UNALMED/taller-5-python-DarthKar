@@ -27,6 +27,9 @@ class Ave(Animal):
     def cantidadAves(cls):
         return cls.cantidadAves
     
+    def __str__(self):
+        return super().__str__()
+
     def movimiento(self):
         return "volar"
     

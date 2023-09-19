@@ -27,6 +27,10 @@ class Pez(Animal):
     def cantidadPez(cls):
         return cls.cantidadPeces
 
+
+    def __str__(self):
+        return super().__str__()
+    
     def movimiento(self):
         return "nadar"
 

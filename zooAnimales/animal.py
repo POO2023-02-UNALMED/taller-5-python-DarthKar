@@ -8,6 +8,7 @@ class Animal:
         self._genero = genero
         self._zona = None
 
+    
     def __str__(self):
         return f"Mi nombre es {self._nombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
 
