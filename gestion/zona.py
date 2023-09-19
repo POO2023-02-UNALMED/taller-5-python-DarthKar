@@ -1,15 +1,10 @@
 class Zona:
 
-    def __init__(self,nombre,zoo):
+    def __init__(self,nombre,zoo=None):
         
         self._nombre = nombre
         self._zoologico = zoo
-        self._animales=[]
-    def __init__(self,nombre):
-        
-        self._nombre = nombre
-        self._zoologico = None
-        self._animales=[]
+        self._animales= []
 
     def agregarAnimales(self,animal):
         self._animales.append(animal)
