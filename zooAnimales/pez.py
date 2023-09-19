@@ -1,32 +1,27 @@
 from zooAnimales.animal import Animal
 class Pez(Animal):
-    cantidadPeces=0
+    canPeces=0
     salmones=0
     bacalaos=0
     _listado=[]
 
     def __init__(self,nombre, edad,habitad, genero, colorEscamas, cantidadAletas):
-        super().__init__(nombre, edad,habitad, genero, colorEscamas, cantidadAletas)
+        super().__init__(nombre, edad,habitad, genero)
         self._colorEscamas=colorEscamas
         self._cantidadAletas=cantidadAletas
-        Pez.cantidadPeces+=1
+        Pez.canPeces+=1
         Pez._listado.append(self)
     
-    def crearSalmon(self,nombre,edad,genero):
-        super().__init__(nombre,edad, "oceano", genero)
-        self._colorEscamas="rojo"
-        self._cantidadAletas=6
+    @classmethod
+    def crearSalmon(cls,nombre,edad,genero):
+        salmon = cls(nombre,edad, "oceano", genero,"rojo",6)
         Pez.salmones+=1
-        Pez.cantidadPeces+=1
-        Pez._listado.append(self)
-    
-    def crearBacalaos(self,nombre,edad,genero):
-        super().__init__(nombre,edad, "oceano", genero)
-        self._colorEscamas= "gris"
-        self._cantidadAletas= 6
+        return salmon
+    @classmethod
+    def crearBacalao(cls,nombre,edad,genero):
+        bacalao=cls(nombre,edad, "oceano", genero,"gris",6)
         Pez.bacalaos+=1
-        Pez.cantidadPeces+=1
-        Pez._listado.append(self)
+        return bacalao
 
     @classmethod
     def cantidadPez(cls):

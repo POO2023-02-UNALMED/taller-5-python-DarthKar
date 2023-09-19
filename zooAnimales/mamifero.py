@@ -23,6 +23,7 @@ class Mamifero(Animal):
         leon = cls(nombre,edad,"selva",genero, True, 4)
         Mamifero.leones+=1
         return leon
+    
 
     @classmethod
     def cantidadMamiferos(cls):
