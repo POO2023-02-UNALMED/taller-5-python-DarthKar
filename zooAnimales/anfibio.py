@@ -1,4 +1,4 @@
-from animal import Animal
+from zooAnimales.animal import Animal
 class Anfibio(Animal):
     cantidadAnfibios=0
     ranas=0
